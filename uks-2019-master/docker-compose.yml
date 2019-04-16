@@ -12,7 +12,8 @@ services:
 
   web:
     container_name: uks_web
-    build: .
+    image: djangoproject
+#    build: .
     command: ["./wait_for_postgres.sh"]
     expose:
       - 8000
